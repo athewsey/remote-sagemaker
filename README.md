@@ -9,8 +9,9 @@ In either case, users may wish to automatically trigger the execution of code in
 
 This repository demonstrates some basic code examples using the same [Jupyter Server REST API](https://github.com/jupyter/jupyter/wiki/Jupyter-Notebook-Server-API) and [Jupyter Client WebSocket API](https://jupyter-client.readthedocs.io/en/stable/messaging.html#) (plus some SageMaker Studio extensions). 
 
-- **[SMStudio Remote Notebook.ipynb](SMStudio%20Remote%20Notebook.ipynb)**: Run all code cells of an (existing) notebook as a SageMaker Studio user
-- **[SMStudio Remote Terminal.ipynb](SMStudio%20Remote%20Terminal.ipynb)**: Open a *System Terminal* and run commands as a SageMaker Studio user
+- **[SMStudio Remote Notebook.ipynb](SMStudio%20Remote%20Notebook.ipynb)**: Demo code to run all code cells of an (existing) notebook as a SageMaker Studio user
+- **[SMStudio Remote Terminal.ipynb](SMStudio%20Remote%20Terminal.ipynb)**: Demo code to open a *System Terminal* and run commands as a SageMaker Studio user
+- **[SMStudio-Run-On-Start](SMStudio-Run-On-Start])**: A [NBI lifecycle-configuration-like](https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-lifecycle-config.html) example for SageMaker Studio - running a setup script whenever a user re/starts their JupyterServer app.
 
 
 ## Related Tools
