@@ -82,7 +82,7 @@ def run_commands(domain_id, user_profile_name):
         while app_status not in {"InService", "Terminated"}:
             time.sleep(2)
             app_status = reqsess.get(f"{base_url}/app?appType=JupyterServer&appName=default").text
-            print(f"Got app_status {app_status}")
+            logger.debug(f"Got app_status {app_status}")
 
         if app_status == "InService":
             logger.info(f"[{domain_id}/{user_profile_name}] JupyterServer app ready")
